@@ -1,0 +1,85 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Most of the times the bug is a typo and it get's really difficult to find in
+    a large piece of code. That is where I used FC (file comparing utility for 
+    windows) (diff in linux/mac) to compare two files. It shortlists all the minor
+    differences in a 2 similar files so that the programmer doesn't have to look at
+    the code which is same but only the one which is different.
+
+How could having easy access to the entire history of a file make you a better
+programmer in the long term?
+
+    It might happen that I might need to revert back to previous versions or undo
+    some changes that I made. Having an entire history will definitely make it much
+    easy and it will also make me feel secure about my changes since I would always
+    be able to revert back.
+
+What do you think are the pros and cons of manually choosing when to create a commit,
+like you do in Git, vs having versions automatically saved, like Google docs does?
+    
+    Manual commits lets the programmer commit whenever there is a need to commit hence,
+    reducing the redudancy and making a commit more significant. On the other hand, as
+    humans we tend to make errors, so one might simply forget to commit his code which
+    can be dangerous.
+
+Why do you think some version control systems, like Git, allow saving multiple files
+in one commit, while others, like Google Docs, treat each file separately?
+
+    I think it is a very good practice to keep track of multiple files in a single commit
+    because often it happens that the files are interconnected. If you take an example of a
+    website or an android app then the project will have loads of inter-linked and then git
+    will come to rescue for the programmer when he is stuck comparing the files.
+
+How can you use the commands git log and git diff to view the history of files?
+    
+    I can first look at the commit history and select the relevant commit by using git log.
+    Then I can compare the relevant commit and the one previous to it by using git diff which
+    would output the changes whith red lines showing the deleted lines and green lines showing
+    the ones that are added in the relevant commit.
+
+How might using version control make you more confident to make changes that could break
+something?
+    
+    By using version control I can always checkout previous commits and always revert back to
+    my previous versions/changes.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I would like to learn more about git and start working on opensource projects.  
+
+
+Extra notes -
+	
+	Softwares like dropbox, google drive and wikipedia also saves previous versions of
+	a file i.e. version control.
+
+    Following are the cmds for git bash to enable/disable proxy authentication.
+    git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+    git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:8080
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
+
+    To make the terminal text colorful.
+    git config --global color.ui auto
+
+    Copying and pasting in Git Bash.
+    Enable quick edit mode from properties of git bash.
+    Then you can copy text by selecting it and then right clicking, and you can paste by
+    right clicking without anything selected.
+
+    Some git errors and warnings.
+    Should not be doing an octopus
+    Octopus is a strategy Git uses to combine many different versions of code together. This
+    message can appear if you try to use this strategy in an inappropriate situation.
+
+    You are in 'detached HEAD' state
+    HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by
+    switching to a previous commit, which we’ll see in the next video. Despite what it sounds
+    like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll
+    realize you’re doing it.
+
+    Panic! (the 'impossible' happened)
+    This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the
+    compiler for a programming language called Haskell. It’s reserved for particularly surprising
+    errors!
