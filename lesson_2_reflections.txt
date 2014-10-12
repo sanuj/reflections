@@ -11,3 +11,37 @@ What value do you think it offers?
 	directory to the repository. You first add data to the staging area and then you
 	commit the changes, so only the data in the staging area gets commited. Staging
 	area gives you more control by selecting what all data you are going to commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	You can compare files in the staging area and the last commit by using 'git diff
+	--staged'. Staging area also allows us to add selected files per commit which have
+	been modified instead of adding all files in every commit.
+
+What are some situations when branches would be helpful in keeping your history organized?
+How would branches help?
+
+	By using multiple branches I can work on different versions of the software simulataneously
+	whithout worrying about the changes that I am making. I can later merge them or discard
+	that particular if things don't work out well.
+
+How do the diagrams help you visualize the branch structure?
+
+	By drawing a diagram we can find out parents of all the commits and then find out whether a
+	commit is reachable by current commit or not. We can also see all the branches clearly and
+	know if changes on this branch will affect other commits or not.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the
+way we do?
+
+	By merging 2 branches we are able to combine different features and bug fixes into one working
+	software. A merged commit will have 2 parents i.e. the 2 parent branches. The label of the
+	branch that got merged into master will be deleted but all the commits will be saved in the
+	history.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Git merging can be really helpful to automate the process when there have been lots of small
+	changes in a big chunk of code. It also prompts conflicts wherever changes are not obvious to
+	merge. It might be annoying sometimes to solve some 'obvious' conflicts but it is a better approach
+	than git guessing which one to keep and which to eliminate.
