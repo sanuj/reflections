@@ -6,4 +6,11 @@ When would you want to use a remote repository rather than keeping all your work
  stay up-to-date with your remote repository?
  	Sometimes you would want to decide when is the appropriate time to sync changes or
  	github would end up making many redundant commits. Moreover, you might also want to
- 	sync local and remote repositories at all.
+ 	sync local and remote repositories at all
+
+Describe the differences between forks, clones, and branches. When would you use one instead
+of another?
+	Forks are used to clone someone else's repository in your own on Github. Clones are same
+	as forks except they can be anywhere instead of necessarily being on Github. Branches are
+	literal brances of the repository tree. They are used to work on different versions of a
+	same repository simultaneously.

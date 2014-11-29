@@ -1,9 +1,0 @@
-When would you want to use a remote repository rather than keeping all your work local?
- 	Remote repository is used to save work remotly so that even if it is lost form the local
- 	machine, it is not lost forever. It makes sharing of code easier.
-
- Why might you want to always pull changes manually rather than having Git automatically
- stay up-to-date with your remote repository?
- 	Sometimes you would want to decide when is the appropriate time to sync changes or
- 	github would end up making many redundant commits. Moreover, you might also want to
- 	sync local and remote repositories at all.
